@@ -1,7 +1,7 @@
 ## Usage
 1. Copy this repository.
 ```
-git clone https://github.com/gnokoheat/nextjs-ant-design-typescript
+git clone https://github.com/igorpichnenko/ant.git
 cd nextjs-ant-design-typescript/
 ```
 2. Install dependencies
