@@ -2,7 +2,7 @@
 1. Copy this repository.
 ```
 git clone https://github.com/igorpichnenko/ant.git
-cd nextjs-ant-design-typescript/
+cd ant
 ```
 2. Install dependencies
 ```
