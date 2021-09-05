@@ -50,7 +50,7 @@ const FormSignIn = () => {
       return
     }
     if (!correct) {
-      alert("такого пользователя не существует")
+      alert("Введен неверный логин или пароль")
       return
     }
     if (isChecked) {
