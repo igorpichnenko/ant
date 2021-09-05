@@ -93,10 +93,9 @@ const FormSignIn = () => {
 
       <Form.Item
         name="remember"
-        valuePropName={isChecked}
         wrapperCol={ { offset: 8, span: 16 }}
         >
-        <Checkbox onChange={handleChange}>Remember me</Checkbox>
+        <Checkbox checked={isChecked} onChange={handleChange}>Remember me</Checkbox>
       </Form.Item>
 
       <Form.Item wrapperCol={ { offset: 8, span: 16 }}>
