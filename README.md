@@ -19,4 +19,4 @@ yarn build
 yarn start
 ```
 
-## [Просмотр работы](https://ant-32glodg9d-ant.vercel.app/signin)
+## [Просмотр работы](https://ant-74i843l1o-ant.vercel.app/)
