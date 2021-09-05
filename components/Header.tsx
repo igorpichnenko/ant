@@ -1,10 +1,8 @@
-
 import Link from 'next/link'
 import { useRouter } from 'next/dist/client/router';
 import { useContext,} from 'react';
 
 import UserContext from '../components/UserContext';
-
 
 export const Header = () =>{
   
@@ -13,20 +11,19 @@ export const Header = () =>{
     const signOut = () =>{
   
     localStorage.removeItem('auth')
-    router.push('/signin')
     setIsAuth(false)
-  
+  router.push('/')
     }
-  
-
-     
-  
+    
+    const signIn = () =>{
+      router.push('/signin')
+    }
     
     return(
         <div className={'header'}>
-       <Link href='/'><a className={'header_link'}>На главную</a></Link>
-       <button className='home_button' onClick={signOut}>Выйти</button>
-       <button className='home_button' onClick={signOut}>Войти</button>
+       <Link href='/'><a className={'header-link'}>На главную</a></Link>
+       <button className='home-button' onClick={signOut}>Выйти</button>
+     {isAuth ? <Link href='/account'><a className='header-account'>Личный кабинет</a></Link>: <button className='home-button' onClick={signIn}> Войти</button>}
        </div>
     )
 }

@@ -1,46 +1,53 @@
-
 *::after,
 *::before {
   box-sizing: border-box;
 }
 
-
-.wrapper {
+.wrapper{
+  height: 100%;
   display: flex;
-  min-height: 100%;
   flex-direction: column;
 }
 
-.content {
+.main {
   flex: 1 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.header{
-  width: 100%;
-  height: 60px;
+.header {
   background-color: teal;
   padding: 20px;
-  
+  flex: 0 0 auto;
 }
 
-.header_link{
+.header-link {
   color: #fff;
-
-
 }
 
-.home_button{
+.header-account{
+  color: black;
+  margin-left: 20px;
+  border: 1px solid black;
+  border-radius: 6px;
+  width: 70px;
+  padding: 4px 10px;
+}
+
+.home-button {
   background-color: inherit;
   color: #fff;
   border: 1px solid #fff;
   border-radius: 6px;
-  width: 50px;
+  width: 70px;
   margin-left: 10px;
   cursor: pointer;
-
 }
 
-.home_button:hover{
+.home-button:hover {
   background-color: #245c46;
 }
 
@@ -50,7 +57,60 @@
   justify-content: center;
 }
 
-.signIn-form{
+.signIn-form {
   margin-top: 50px;
-  width: 700px;
+  width: 300px;
+}
+
+.footer{
+  flex: 0 0 auto;
+  background-color: teal;
+  padding: 20px;
+}
+
+.footer-text{
+  color: white;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+}
+
+.account-button{
+  background-color: inherit;
+  color: teal;
+  border: 1px solid teal;
+  border-radius: 6px;
+  width: 70px;
+  cursor: pointer;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.user-ava{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-image{
+  position: relative;
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 10px 20px rgba(31, 32, 65, 0.1));
+}
+.user-image::after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: '';
+  border: 2px solid #fff;
+  border-radius: 50%;
 }

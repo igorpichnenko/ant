@@ -16,9 +16,7 @@ useEffect(()=>{
   if(localStorage.getItem('auth')){
   setIsAuth(true)
 }
-if(!isAuth && !localStorage.getItem('auth') ){
-  router.push('/signin')
-}
+
 },[])
 
   return (
