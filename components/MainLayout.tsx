@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Header } from './Header';
-import { Footer } from './Footer'
+import { Footer } from './Footer';
 
 type MainLayoutProps = {
   children: any;
@@ -13,7 +13,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({
   children,
   title = 'test',
   description = 'ant design',
-  keyWords = 'test? project'
+  keyWords = 'test? project',
 }) => (
   <>
     <Head>
@@ -26,8 +26,12 @@ const MainLayout: React.FC<MainLayoutProps> = ({
       <meta name="theme-color" content="#ffffff" />
       <title>{title} | Test-Project</title>
     </Head>
-    <div className="wrapper"><Header/>
-      <main  className="main">{children}</main><Footer/></div></>
+    <div className="wrapper">
+      <Header />
+      <main className="main">{children}</main>
+      <Footer />
+    </div>
+  </>
 );
 export type { MainLayoutProps };
 

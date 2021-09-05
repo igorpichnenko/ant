@@ -5,25 +5,19 @@ import 'antd/dist/antd.css';
 import UserContext from '../components/UserContext';
 import '../styles/main.css';
 
-
-
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const [isAuth, setIsAuth] = useState(false)
-  const router = useRouter()
+  const [isAuth, setIsAuth] = useState(false);
+  const router = useRouter();
 
-useEffect(()=>{
-   
-  if(localStorage.getItem('auth')){
-  setIsAuth(true)
-}
-
-},[])
+  useEffect(() => {
+    if (localStorage.getItem('auth')) {
+      setIsAuth(true);
+    }
+  }, []);
 
   return (
-    <UserContext.Provider value={{isAuth,setIsAuth}}>
-     
+    <UserContext.Provider value={{ isAuth, setIsAuth }}>
       <Component {...pageProps} />
-
-   </UserContext.Provider>
+    </UserContext.Provider>
   );
 }

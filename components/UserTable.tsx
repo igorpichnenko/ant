@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { Table, Radio, Divider } from 'antd';
 
-
-
 const columns = [
   {
     title: 'Name',
     dataIndex: 'name',
-    
   },
   {
     title: 'Number',
@@ -43,25 +40,18 @@ const data = [
     sessionNumber: 35,
     sessionTime: '648s',
   },
-    {
+  {
     key: '4',
     name: 'Adim',
     sessionNumber: 35,
     sessionTime: '648s',
   },
-]; 
-
-
+];
 
 export const UserTable = () => {
-  
   return (
     <div>
-      <Table
-        columns={columns}
-        dataSource={data}
-      />
+      <Table columns={columns} dataSource={data} />
     </div>
   );
 };
-

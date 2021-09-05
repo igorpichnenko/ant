@@ -3,11 +3,11 @@ import MainLayout from '../components/MainLayout';
 
 const SignIn = () => {
   return (
-<MainLayout title={'signIn'} description={'signIn'}> 
-<div className="signIn-form"> 
-      <FormSignIn></FormSignIn>
+    <MainLayout title={'signIn'} description={'signIn'}>
+      <div className="signIn-form">
+        <FormSignIn></FormSignIn>
       </div>
-      </MainLayout>
+    </MainLayout>
   );
 };
 
