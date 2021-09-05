@@ -57,10 +57,7 @@ export const UserTable = () => {
   
   return (
     <div>
-    
-
       <Table
-        
         columns={columns}
         dataSource={data}
       />

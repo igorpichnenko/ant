@@ -12,7 +12,7 @@ export const Header = () =>{
   
     localStorage.removeItem('auth')
     setIsAuth(false)
-  router.push('/')
+    router.push('/')
     }
     
     const signIn = () =>{
