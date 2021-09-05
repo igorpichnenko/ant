@@ -25,7 +25,6 @@ const FormSignIn = () => {
   const correctLogin = 'admin@test.ru';
   const correctPassword = '12345678qwe';
   const {
-    isAuth,
     setIsAuth
   } = useContext(UserContext)
   const router = useRouter()

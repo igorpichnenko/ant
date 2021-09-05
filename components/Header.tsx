@@ -22,7 +22,7 @@ export const Header = () =>{
     return(
         <div className={'header'}>
        <Link href='/'><a className={'header-link'}>На главную</a></Link>
-       <button className='home-button' onClick={signOut}>Выйти</button>
+      {isAuth && <button className='home-button' onClick={signOut}>Выйти</button>}
      {isAuth ? <Link href='/account'><a className='header-account'>Личный кабинет</a></Link>: <button className='home-button' onClick={signIn}> Войти</button>}
        </div>
     )
