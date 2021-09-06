@@ -1,8 +1,8 @@
 {
-  "name": "nextjs-ant-design-typescript",
-  "version": "1.0.2",
+  "name": "ant",
+  "version": "1.0.1",
   "description": "nextjs with ant design by typescript",
-  "author": "gnokoheat",
+  "author": "",
   "license": "MIT",
   "scripts": {
     "dev": "next",
