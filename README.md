@@ -1,3 +1,9 @@
+## Тэстовое задание
+```
+login: admin@test.ru
+password: 12345678qwe
+```
+
 ## Usage
 1. Copy this repository.
 ```
